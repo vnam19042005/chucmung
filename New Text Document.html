@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Day Surprise</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('/mnt/data/A_cute_and_adorable_illustration_of_Loppy,_a_fluff.png') no-repeat center center/cover;
+            font-family: 'Arial', sans-serif;
+        }
+        .letter {
+            width: 220px;
+            height: 140px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 3px solid #ff6b81;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+            line-height: 140px;
+            font-weight: bold;
+            font-size: 18px;
+            color: #ff6b81;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .letter:hover {
+            transform: scale(1.1);
+        }
+        .message {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .message p {
+            font-size: 20px;
+            color: #ff6b81;
+        }
+        .message a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background: #ff6b81;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .message a:hover {
+            background: #e05666;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter" onclick="openLetter()">💌 Click to Open</div>
+    <div class="message" id="message">
+        <p>💖 Chúc Xuân Quỳnh 14/3 vui vẻ, ngày càng xinh đẹp và đạt học sinh giỏi học kỳ 2! 💖</p>
+     
+        <a href="https://youtube.com/shorts/X5OiZWfZCXM?feature=shared" target="_blank">Nhận bất ngờ</a>
+    </div>
+
+    <script>
+        function openLetter() {
+            document.querySelector('.letter').style.display = 'none';
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
